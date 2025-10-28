@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/*Calculator Container*/
+.calculator {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 370px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* Display Area */
+.display {
+  background: #fefefe;
+  text-align: right;
+  padding: 20px;
+  font-size: 2em;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  height: 90px;
+  overflow-x: auto;
+}
+
+/* Buttons Grid Layout  */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 15px;
+  background: #f8fafb;
+}
+
+/* Common Button Styling  */
+button {
+  padding: 18px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Color Themes for Different Button Types */ 
+.number {
+  background-color: #fef6e4;
+  color: #333;
+}
+.number:hover {
+  background-color: #fde2c6;
+}
+
+.operator {
+  background-color: #c3f0ca;
+  color: #276749;
+}
+.operator:hover {
+  background-color: #a5e5b0;
+}
+
+.scientific {
+  background-color: #e7c6ff;
+  color: #4b0082;
+}
+.scientific:hover {
+  background-color: #d0a9f5;
+}
+
+.equals {
+  background-color: #a5d8ff;
+  color: #1b4965;
+}
+.equals:hover {
+  background-color: #89c2d9;
+}
+
+.clear {
+  background-color: #ffccd5;
+  color: #b30000;
+}
+.clear:hover {
+  background-color: #ffb3c1;
+}
+
+.delete {
+  background-color: #ffe5b4;
+  color: #8b4513;
+}
+.delete:hover {
+  background-color: #ffd28c;
+}
+
+/* Button Click Animation */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Footer Note */
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+  color: #555;
+}

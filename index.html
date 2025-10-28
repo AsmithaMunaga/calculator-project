@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientific Calculator</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <!-- Display Screen-->
+    <div class="display" id="display">0</div>
+
+    <!-- ===== Calculator Buttons ===== -->
+    <div class="buttons">
+      <!-- Top row: clear, delete, brackets, percent -->
+      <button class="clear">C</button>
+      <button class="delete">DEL</button>
+      <button class="scientific">(</button>
+      <button class="scientific">)</button>
+      <button class="operator">%</button>
+
+      <!-- Scientific functions -->
+      <button class="scientific">sin</button>
+      <button class="scientific">cos</button>
+      <button class="scientific">tan</button>
+      <button class="scientific">log</button>
+      <button class="scientific">ln</button>
+
+      <!-- More scientific operators -->
+      <button class="scientific">√</button>
+      <button class="scientific">x²</button>
+      <button class="scientific">x³</button>
+      <button class="scientific">π</button>
+      <button class="scientific">e</button>
+
+      <!-- Numeric and arithmetic buttons -->
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button class="operator">/</button>
+      <button class="operator">*</button>
+
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="operator">-</button>
+      <button class="operator">+</button>
+
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="number">0</button>
+      <button class="equals">=</button>
+
+      <!-- Decimal point -->
+      <button class="number">.</button>
+    </div>
+
+    <!--  Footer Text -->
+    <div class="footer">✨ Scientific JS Calculator ✨</div>
+  </div>
+
+  <!-- Link external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
